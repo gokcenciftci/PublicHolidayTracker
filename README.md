@@ -14,7 +14,7 @@ Uygulama başlatıldığında API üzerinden veriler otomatik olarak hafızaya a
 * **Tam Liste:** Desteklenen 3 yılın tüm tatillerini tek seferde ekrana döker.
 * **Dinamik Veri Çekimi:** `HttpClient` kullanılarak veriler JSON formatında canlı olarak çekilir.
 
-## ⚙️ Teknik Detaylar
+## 🔗 Teknik Detaylar
 
 Proje **.NET** platformu üzerinde **C#** dili ile geliştirilmiştir.
 
