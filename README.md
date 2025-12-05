@@ -4,7 +4,7 @@ Bu proje, **Piri Reis Üniversitesi - Görsel Programlama** dersi vize ödevi ka
 
 Uygulama, Nager.Date API servisini kullanarak Türkiye'deki resmi tatil verilerini (2023, 2024 ve 2025 yılları için) çeker, işler ve kullanıcıya sorgulama imkanı sunar.
 
-## Özellikler
+## 🚀 Proje Özellikleri
 
 Uygulama başlatıldığında API üzerinden veriler otomatik olarak hafızaya alınır ve aşağıdaki işlemleri gerçekleştirebilir:
 
@@ -14,7 +14,7 @@ Uygulama başlatıldığında API üzerinden veriler otomatik olarak hafızaya a
 * **Tam Liste:** Desteklenen 3 yılın tüm tatillerini tek seferde ekrana döker.
 * **Dinamik Veri Çekimi:** `HttpClient` kullanılarak veriler JSON formatında canlı olarak çekilir.
 
-## Teknik Detaylar
+## ⚙️ Teknik Detaylar
 
 Proje **.NET** platformu üzerinde **C#** dili ile geliştirilmiştir.
 
