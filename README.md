@@ -1,46 +1,22 @@
 # PublicHolidayTracker
 
-Bu proje, **Piri Reis Üniversitesi - Görsel Programlama** dersi vize ödevi kapsamında geliştirilmiş bir C# Konsol uygulamasıdır.
+Bu proje, **Piri Reis Ãœniversitesi - GÃ¶rsel Programlama** dersi vize Ã¶devi kapsamÄ±nda geliÅŸtirilmiÅŸ bir C# Konsol uygulamasÄ±dÄ±r.
 
-Uygulama, Nager.Date API servisini kullanarak Türkiye'deki resmi tatil verilerini (2023, 2024 ve 2025 yılları için) çeker, işler ve kullanıcıya sorgulama imkanı sunar.
+Uygulama, Nager.Date API servisini kullanarak TÃ¼rkiye'deki resmi tatil verilerini (2023, 2024 ve 2025 yÄ±llarÄ± iÃ§in) Ã§eker, iÅŸler ve kullanÄ±cÄ±ya sorgulama imkanÄ± sunar.
 
-## Özellikler
+## Ã–zellikler
 
-Uygulama başlatıldığında API üzerinden veriler otomatik olarak hafızaya alınır ve aşağıdaki işlemleri gerçekleştirebilir:
+Uygulama baÅŸlatÄ±ldÄ±ÄŸÄ±nda API Ã¼zerinden veriler otomatik olarak hafÄ±zaya alÄ±nÄ±r ve aÅŸaÄŸÄ±daki iÅŸlemleri gerÃ§ekleÅŸtirebilir:
 
-* **Yıla Göre Listeleme:** Kullanıcının seçtiği yıla (2023-2025) ait tüm tatilleri listeler.
-* **Tarihe Göre Arama:** Gün ve Ay (gg-aa) formatında girilen tarihte bir tatil olup olmadığını kontrol eder.
-* **İsme Göre Arama:** Tatil ismine (Örn: "Cumhuriyet") göre arama yapar.
-* **Tam Liste:** Desteklenen 3 yılın tüm tatillerini tek seferde ekrana döker.
-* **Dinamik Veri Çekimi:** `HttpClient` kullanılarak veriler JSON formatında canlı olarak çekilir.
+* **YÄ±la GÃ¶re Listeleme:** KullanÄ±cÄ±nÄ±n seÃ§tiÄŸi yÄ±la (2023-2025) ait tÃ¼m tatilleri listeler.
+* **Tarihe GÃ¶re Arama:** GÃ¼n ve Ay (gg-aa) formatÄ±nda girilen tarihte bir tatil olup olmadÄ±ÄŸÄ±nÄ± kontrol eder.
+* **Ä°sme GÃ¶re Arama:** Tatil ismine (Ã–rn: "Cumhuriyet") gÃ¶re arama yapar.
+* **Tam Liste:** Desteklenen 3 yÄ±lÄ±n tÃ¼m tatillerini tek seferde ekrana dÃ¶ker.
+* **Dinamik Veri Ã‡ekimi:** `HttpClient` kullanÄ±larak veriler JSON formatÄ±nda canlÄ± olarak Ã§ekilir.
 
 ## Teknik Detaylar
 
-Proje **.NET** platformu üzerinde **C#** dili ile geliştirilmiştir.
+Proje **.NET** platformu Ã¼zerinde **C#** dili ile geliÅŸtirilmiÅŸtir.
 
-* **Veri Kaynağı:** [Nager.Date API](https://date.nager.at/Api)
-* **JSON İşlemleri:** `System.Text.Json` kütüphanesi kullanılarak API'den gelen veriler nesneye dönüştürülmüştür.
-* **Veri Modeli:** API verileri aşağıdaki sınıf yapısına uygun olarak işlenmektedir:
-
-```csharp
-class Holiday
-{
-    public string date { get; set; }
-    public string localName { get; set; }
-    public string name { get; set; }
-    public string countryCode { get; set; }
-    public bool @fixed { get; set; } // C# keyword çakışması için @ kullanıldı
-    public bool global { get; set; }
-}
-
-Menü Yapısı
-
-===== PublicHolidayTracker =====
-1. Tatil listesini göster (yıl seçmeli)
-2. Tarihe göre tatil ara (gg-aa formatı)
-3. İsme göre tatil ara
-4. Tüm tatilleri 3 yıl boyunca göster (2023–2025)
-5. Çıkış
-Seçiminiz:
-
-Geliştirici: Gökçen Çiftci Okul No: 20230108016 Ders: Görsel Programlama Teslim Tarihi: 30.11.2025
+* **Veri KaynaÄŸÄ±:** [Nager.Date API](https://date.nager.at/Api)
+* **JSON Ä°ÅŸlemleri:** `System.Text.Json` kÃ¼tÃ¼phanesi kullanÄ±larak API'den gelen veriler nesneye dÃ¶nÃ¼ÅŸtÃ¼rÃ¼lmÃ¼ÅŸtÃ¼r.
